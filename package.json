@@ -22,6 +22,7 @@
     "@vercel/kv": "^1.0.0",
     "ai": "^2.2.24",
     "clsx": "^2.0.0",
+    "core\n": "link:@tiptap/core\n",
     "next": "14.0.3",
     "partykit": "^0.0.37",
     "react": "^18",

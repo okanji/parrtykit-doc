@@ -11,13 +11,9 @@ import { getBaseExtensions } from "@/tiptapExtensions";
 
 const doc = new Y.Doc();
 
-const provider = new Provider(
-  "localhost:1999",
-  "y-partykit-text-editor-example",
-  doc
-);
+export default function Page({ params }: { params: { roomId: string } }) {
+  const provider = new Provider("localhost:1999", params.roomId, doc);
 
-const Tiptap = () => {
   const editor = useEditor({
     extensions: [
       ...getBaseExtensions(),
@@ -36,6 +32,4 @@ const Tiptap = () => {
   });
 
   return <EditorContent style={{ border: "solid" }} editor={editor} />;
-};
-
-export default Tiptap;
+}
