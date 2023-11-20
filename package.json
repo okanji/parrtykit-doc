@@ -9,19 +9,36 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@blocknote/core": "^0.9.6",
+    "@blocknote/react": "^0.9.6",
+    "@hocuspocus/transformer": "^2.8.0",
+    "@supabase/supabase-js": "^2.38.4",
+    "@tiptap/extension-collaboration": "^2.1.12",
+    "@tiptap/extension-collaboration-cursor": "^2.1.12",
+    "@tiptap/react": "^2.1.12",
+    "@tiptap/starter-kit": "^2.1.12",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/blob": "^0.15.1",
+    "@vercel/kv": "^1.0.0",
+    "ai": "^2.2.24",
+    "clsx": "^2.0.0",
+    "next": "14.0.3",
+    "partykit": "^0.0.37",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "sonner": "^1.2.0",
+    "y-partykit": "^0.0.10",
+    "yjs": "^13.6.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "typescript": "^5"
   }
 }
