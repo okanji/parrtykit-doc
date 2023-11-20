@@ -1,7 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Env variables
-I could not figure out env variables for partykit locally, so there are two placeholders for the supabase keys in `partykit/index.ts`: ```
+I could not figure out env variables for partykit locally, so there are two placeholders for the supabase keys in `partykit/index.ts`: 
+
+```
 const SUPABASE_URL = "";
 const SUPABASE_KEY = "";
 ```
@@ -9,6 +11,7 @@ const SUPABASE_KEY = "";
 ## Getting Started
 
 Create the following supabase table:
+
 ```
 create table
   public.documents (
