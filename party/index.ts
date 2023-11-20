@@ -11,6 +11,9 @@ import * as Y from "yjs";
 const transformer = TiptapTransformer.extensions(getBaseExtensions());
 const rootFragmentField = "default";
 
+const SUPABASE_URL = "";
+const SUPABASE_KEY = "";
+
 export default class PartyKitServer implements Party.Server {
   constructor(readonly party: Party.Party) {}
 
@@ -19,13 +22,9 @@ export default class PartyKitServer implements Party.Server {
   // }
 
   async onConnect(connection: Party.Connection, ctx: Party.ConnectionContext) {
-    const supabase = createClient(
-      process.env.SUPABASE_URL || "",
-      process.env.SUPABASE_KEY || "",
-      {
-        auth: { persistSession: false }
-      }
-    );
+    const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, {
+      auth: { persistSession: false }
+    });
 
     console.log("*** ID", this.party.id);
 
